@@ -1,0 +1,29 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { Stack, HStack, VStack, Button } from '@chakra-ui/react'
+
+const Navbar = () => {
+  return (
+
+    <HStack   p={"4"} shadow={"base"} bgColor={"blackAlpha.900"}>
+
+
+      <Button variant={"unstyled"} color={"white"}>
+        <Link to="/">Home</Link>
+      </Button>
+
+      <Button variant={"unstyled"} color={"white"}>
+        <Link to="/coins">Coins</Link>
+      </Button>
+
+      <Button variant={"unstyled"} color={"white"}>
+        <Link to="/exchanges">Exchanges</Link>
+      </Button>
+      
+    
+
+    </HStack>
+  )
+}
+
+export default Navbar
